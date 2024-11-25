@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Udemy.DataAccess.Data;
+using Udemy.DataAccess.Repository.IRepository;
+using Udemy.DataAccess.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(
     options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
 var app = builder.Build();
 

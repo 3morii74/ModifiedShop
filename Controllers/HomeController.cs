@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using UdemyProject.Models;
+using Udemy.Models;
 
 namespace UdemyProject.Controllers
 {

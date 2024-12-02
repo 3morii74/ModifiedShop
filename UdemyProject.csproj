@@ -17,15 +17,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <UpToDateCheckInput Remove="Views\Category\Create.cshtml" />
+    <UpToDateCheckInput Remove="Areas\Admin\Views\Category\Create.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
-    <_ContentIncludedByDefault Remove="Views\Category\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Areas\Admin\Views\Category\Create.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Udemy.DataAccess\Udemy.DataAccess.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\product\" />
   </ItemGroup>
 
 </Project>
